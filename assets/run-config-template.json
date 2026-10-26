@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "run_id": null,
+  "created_at": null,
+  "project_namespace": null,
+  "output_directory": null,
+  "website_urls": [],
+  "product_profile_snapshots": [],
+  "input_files": [],
+  "accounts": [],
+  "periods": {
+    "comparison": {"start": null, "end": null},
+    "current": {"start": null, "end": null},
+    "timezone": null,
+    "equal_duration": null,
+    "comparison_limitations": []
+  },
+  "conversion_definition": {
+    "primary_event_ids_or_names": [],
+    "primary_goal_type": null,
+    "counting_method": null,
+    "attribution_window": null,
+    "primary_selection_status": "unknown",
+    "selection_source": null,
+    "other_event_ids_or_names": [],
+    "can_sum_events": null,
+    "event_overlap_notes": null,
+    "lead_quality_or_revenue_available": null
+  },
+  "targets": {
+    "target_cpa": null,
+    "target_roas": null,
+    "currency": null,
+    "source": null,
+    "valid_from": null,
+    "valid_until": null
+  },
+  "run_rule_ids": [],
+  "historical_profile_reuse": {
+    "allowed_namespace": null,
+    "reused_profile_versions": [],
+    "checked_at": null,
+    "changes_affecting_comparison": []
+  },
+  "platform_settings_evidence": [],
+  "data_limitations": [],
+  "unresolved_questions": [],
+  "delivery_status": null,
+  "template_guidance": {
+    "usage": "由AI从本次请求与输入报表识别并填写，未知保持null或空列表；不得将未知转成0、false或账户默认值。填写后可移除template_guidance。",
+    "account_shape": {
+      "account_id": null,
+      "account_name": null,
+      "platform": null,
+      "timezone": null,
+      "currency": null,
+      "product_ids": [],
+      "source": null
+    },
+    "input_file_shape": {
+      "file_id": null,
+      "path_or_reference": null,
+      "report_type": null,
+      "account_ids": [],
+      "period_start": null,
+      "period_end": null,
+      "exported_at": null,
+      "grain": null,
+      "source_fields": [],
+      "missing_required_fields": [],
+      "reliability_notes": null
+    },
+    "profile_snapshot_shape": {
+      "product_id": null,
+      "profile_id": null,
+      "profile_version": null,
+      "snapshot_path": null
+    },
+    "platform_setting_shape": {
+      "setting_id": null,
+      "account_id": null,
+      "object_type": null,
+      "object_id": null,
+      "setting_name": null,
+      "value": null,
+      "observed_at": null,
+      "source": null,
+      "applies_to_report_period": null
+    },
+    "notes": [
+      "一个产品不能默认对应全部账户；多平台、币种、时区与转化口径分别标识。",
+      "没有目标CPA也可以做观察性分析；不要从网站价格推导目标CPA。",
+      "多个转化事件不自动相加；主事件未确定时分事件呈现，依赖其口径的动作待核验。",
+      "规则定义存产品资料；run_rule_ids引用本次有效规则，避免相互矛盾的重复副本。",
+      "当期设置不证明历史设置；只有当前单周期资料时不伪造双周比较。"
+    ]
+  }
+}

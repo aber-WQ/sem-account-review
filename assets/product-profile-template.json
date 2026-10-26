@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "profile_id": null,
+  "profile_version": null,
+  "created_at": null,
+  "updated_at": null,
+  "identity": {
+    "project_namespace": null,
+    "site_domain": null,
+    "root_url": null,
+    "product_id": null,
+    "product_name": null
+  },
+  "profile_status": null,
+  "business_summary": null,
+  "sources": [],
+  "facts": [],
+  "rules": [],
+  "audience_hypotheses": [],
+  "conversion_paths": [],
+  "campaign_product_mappings": [],
+  "open_questions": [],
+  "conflicts": [],
+  "revision_notes": [],
+  "template_guidance": {
+    "usage": "复制到本次输出目录后由AI根据网站和用户说明填写；用户无需填写。空值合法，表示未知或未提供；填写后可移除template_guidance。每个产品独立保存一份。",
+    "source_shape": {
+      "source_id": null,
+      "source_kind": "unknown",
+      "title": null,
+      "url_or_reference": null,
+      "retrieved_at": null,
+      "published_or_updated_at": null,
+      "summary": null,
+      "access_status": null
+    },
+    "fact_shape": {
+      "fact_id": null,
+      "dimension": null,
+      "statement": null,
+      "source_kind": "unknown",
+      "source_ids": [],
+      "scope": null,
+      "confidence": null,
+      "uncertainty": null,
+      "valid_from": null,
+      "valid_until": null,
+      "status": null
+    },
+    "rule_shape": {
+      "rule_id": null,
+      "type": null,
+      "statement": null,
+      "subject": null,
+      "scope": {
+        "product_ids": [],
+        "account_ids": [],
+        "campaign_ids": [],
+        "adgroup_ids": [],
+        "run_id": null
+      },
+      "strength": null,
+      "source": {
+        "source_kind": "unknown",
+        "source_id": null,
+        "original_statement": null,
+        "confirmed_at": null,
+        "current_or_historical": null
+      },
+      "valid_from": null,
+      "valid_until": null,
+      "persistence": null,
+      "exceptions": [],
+      "status": null,
+      "supersedes_rule_ids": [],
+      "decision_effect": null
+    },
+    "audience_shape": {
+      "audience_id": null,
+      "user_role": null,
+      "buyer_role": null,
+      "industry_or_scenario": null,
+      "need": null,
+      "source_kind": "unknown",
+      "source_ids": [],
+      "confidence": null,
+      "uncertainty": null
+    },
+    "conversion_path_shape": {
+      "path_id": null,
+      "page_url": null,
+      "website_cta": null,
+      "pricing_or_delivery_model": null,
+      "report_event_mapping": null,
+      "mapping_evidence_ids": [],
+      "mapping_status": "unknown"
+    },
+    "campaign_product_mapping_shape": {
+      "mapping_id": null,
+      "account_id": null,
+      "campaign_id": null,
+      "adgroup_id": null,
+      "source_object_key": null,
+      "landing_page_url": null,
+      "product_ids": [],
+      "source_ids": [],
+      "confidence": null,
+      "status": "unknown",
+      "uncertainty": null
+    },
+    "open_question_shape": {
+      "question_id": null,
+      "question": null,
+      "affected_objects_or_conclusions": [],
+      "blocks_execution": false
+    },
+    "conflict_shape": {
+      "conflict_id": null,
+      "dimension": null,
+      "source_or_rule_ids": [],
+      "affected_objects_or_actions": [],
+      "resolution": null,
+      "status": null
+    },
+    "allowed_source_kinds": ["user_confirmed", "site_claim", "inference", "unknown"],
+    "allowed_rule_types": ["capability_limit", "business_exclusion", "campaign_restriction", "preference"],
+    "allowed_rule_strengths": ["hard", "soft"],
+    "allowed_rule_persistence": ["long_term", "run_only"],
+    "allowed_rule_statuses": ["active", "needs_clarification", "expired", "superseded"],
+    "notes": "模板没有产品默认事实。scope中的空列表不代表适用全部对象；范围未确认时不得按全局规则执行。网站能力只算声明，缺失说明不算不支持。"
+  }
+}

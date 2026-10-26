@@ -1,0 +1,6 @@
+interface:
+  display_name: "搜索广告账户复盘"
+  short_description: "从产品网站、投放数据与内部业务规则生成有证据的搜索广告账户复盘和执行清单"
+  default_prompt: "使用 $sem-account-review，根据我提供的产品网站、投放报表和业务补充，先建立产品与受众资料，再完成搜索广告账户复盘。"
+policy:
+  allow_implicit_invocation: true
